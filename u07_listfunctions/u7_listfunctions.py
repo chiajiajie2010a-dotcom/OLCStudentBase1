@@ -247,6 +247,19 @@ else:
 print(userbase) # testing to see output
 
 # Task 1.3
+# personality ={"Extroverted" :[] ,"Introverted" : [] , "Kind" : [], "Curious" : []}
+
+# for name, profile in userbase.items():
+#    # for each name, pull out personlity of that name 
+#     current_personality = profile[1]
+
+#     #pull out value from personalities
+#     friends = personalities[current_personality] #
+#     friends.append(name)
+#     personalities[current_personality]
+# print(personalities)
+
+
 
 # Copy and paste your program from sub-task 1.2.
 
@@ -264,7 +277,25 @@ print(userbase) # testing to see output
 
 
 
+userbase = {
+"Alice": ["Female", "Extroverted", "Travel"],
+"Bob": ["Male", "Introverted", "Coding"],
+"Carol": ["Female", "Extroverted", "Photography"]
+}
+personalities = {"Extroverted":[],"Introverted":[],"Kind":[],"Curious":[]}
 
+for name, profile in userbase.items():
+
+    # for each name, i pull the personality of that name
+    curr_personality = profile[1]
+
+    # pull out value from personalities
+    friends = personalities[curr_personality] # 
+    friends.append(name)
+
+    personalities[curr_personality] = friends
+
+print(personalities)
 
 
 

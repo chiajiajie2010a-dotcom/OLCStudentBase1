@@ -75,10 +75,10 @@
 # Exercise 10: Floor Division for Age Conversion
 # Write a program to calculate someone's age in decades and 
 # remaining years. Example: Age = 29 -> Decades = 2, Years = 9.
-age = int(input("please enter your age"))
-decades = age // 10 
-leftover = age % 10 
-print(f"Age = {age} -> Decades = {decades} , years = {leftover}")
+# age = int(input("please enter your age"))
+# decades = age // 10 
+# leftover = age % 10 
+# print(f"Age = {age} -> Decades = {decades} , years = {leftover}")
 
 
 
@@ -89,3 +89,11 @@ print(f"Age = {age} -> Decades = {decades} , years = {leftover}")
 # are 53 items and each box holds 12, the output is:
 # Full boxes = 4, Leftover = 5.
 
+
+
+string = input("Enter a string: ")
+char = input("Enter a character to remove: ")
+
+new_string = string.replace(char, "")
+
+print(new_string)

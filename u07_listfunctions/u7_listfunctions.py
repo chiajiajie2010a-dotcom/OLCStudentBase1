@@ -1,3 +1,39 @@
+students = ["john","malcolm","kevin","mary","jane","lilian"]
+scores =[45,67,88,44,79,95]
+# identify highest score 
+max_score = max(scores)
+print(max_score)
+# identify highest scorer 
+pos_max = scores.index(max_score)
+print(pos_max)
+high_student = students[pos_max]
+print(f"{high_student} scored the highestt score of {max_score }")
+
+for i in range(len(scores)):
+    if scores[i] < 50:
+        print(f"{students[i]} go see principal, you failed ")
+# to add to list 
+# delete from list 
+scores.remove(79)
+del scores[4]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # # string variable
 # # integer, float
 # # boolean >> True False

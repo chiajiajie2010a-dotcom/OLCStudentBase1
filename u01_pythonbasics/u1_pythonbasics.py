@@ -13,3 +13,10 @@ print(f"division {x // y}")
 print(f"multiplication {x * y}")
 print(f"subtraction {x - y}")
 print(f"power {x**y}")
+
+for i in range(5): 
+    expressway = input("Enter name of gantry:") 
+    old = float(input("Enter old rate:")) 
+    new = float(input("Enter new rate:")) 
+    change = new - old 
+    print("Change is",change)
